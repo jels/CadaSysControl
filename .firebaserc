@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "asistenciacada-53c63": {
+      "hosting": {
+        "app": [
+          "asistenciacada-53c63"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "asistenciacada-53c63"
+  }
+}

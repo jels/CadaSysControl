@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <div class="ion-text-center">
+        <ion-title>RESUMEN {{fecha}} {{_turno}}</ion-title>
+      </div>
+      <ion-item>
+        <ion-label id="estudiantesM">Estudiantes Dentro del CADA</ion-label>
+        <ion-note slot="end" color="secondary">{{contAsistencia-(contRetiro+contSalida)}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Profesores en el CADA</ion-label>
+        <ion-note slot="end" color="secondary">{{contProfesPresentes}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Asistencia del Día</ion-label>
+        <ion-note slot="end" color="secondary">{{contAsistencia}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Llegada Tardía</ion-label>
+        <ion-note slot="end" color="secondary">{{contAsistenciaTarde}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estudiantes Ausentes</ion-label>
+        <ion-note slot="end" color="secondary">{{contEstudMatriculados-contAsistencia}}</ion-note>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estudiantes Retirados</ion-label>
+        <ion-note slot="end" color="secondary">{{contRetiro+contSalida}}</ion-note>
+      </ion-item>
+    </ion-list>
+    <div id="containertop">
+      <button ion-button (click)="goToAsistencia()" class="btn">Registrar Asistencia
+        <ion-badge color="success" slot="up">{{contAsistencia}}</ion-badge>
+      </button>
+    </div>
+    <div id="containermedio">
+      <button ion-button (click)="goToRetiro()" class="btn">Registrar Retiro
+        <ion-badge color="warning" slot="start">{{contRetiro}}</ion-badge>
+      </button>
+    </div>
+    <div id="containerbajo">
+      <button ion-button (click)="goToSalida()" class="btn">Registrar Salida
+        <ion-badge color="danger" slot="up">{{contSalida}}</ion-badge>
+      </button>
+    </div>
+  </ion-content>

@@ -1,0 +1,21 @@
+<div class="body">
+  <form [formGroup]="form" (ngSubmit)="ingresar()">
+    <div class="login">
+      <img src="../assets/lock.png" alt="login" width="30%">
+      <ion-item class="ancho">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" formControlName="usuario"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item class="ancho">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button type="submit"  class="button" expand="full" color="primary">
+        <ion-icon slot="start" name="key-outline" color="success"></ion-icon>
+      </ion-button>
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,7 @@
+{
+  "name": "cadasiscontrol",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

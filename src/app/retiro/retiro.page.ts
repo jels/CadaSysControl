@@ -4,9 +4,10 @@ import { LoadingController, ToastController } from '@ionic/angular';
 import jsQR from 'jsqr';
 
 @Component({
-  selector: 'app-retiro',
-  templateUrl: './retiro.page.html',
-  styleUrls: ['./retiro.page.scss'],
+    selector: 'app-retiro',
+    templateUrl: './retiro.page.html',
+    styleUrls: ['./retiro.page.scss'],
+    standalone: false
 })
 export class RetiroPage implements OnInit {
 

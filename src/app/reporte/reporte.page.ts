@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { ReportesService } from '../services/reportes.service';
 
 @Component({
-  selector: 'app-reporte',
-  templateUrl: './reporte.page.html',
-  styleUrls: ['./reporte.page.scss'],
+    selector: 'app-reporte',
+    templateUrl: './reporte.page.html',
+    styleUrls: ['./reporte.page.scss'],
+    standalone: false
 })
 export class ReportePage implements OnInit {
   contEstudMatriculados: number = 0;

@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { ReportesService } from '../services/reportes.service';
 
 @Component({
-  selector: 'app-lista-asistencia',
-  templateUrl: './lista-asistencia.page.html',
-  styleUrls: ['./lista-asistencia.page.scss'],
+    selector: 'app-lista-asistencia',
+    templateUrl: './lista-asistencia.page.html',
+    styleUrls: ['./lista-asistencia.page.scss'],
+    standalone: false
 })
 export class ListaAsistenciaPage implements OnInit {
   contEstudMatriculados: number = 0;

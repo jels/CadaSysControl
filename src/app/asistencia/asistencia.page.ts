@@ -7,9 +7,10 @@ import { ReportesService } from '../services/reportes.service';
 
 
 @Component({
-  selector: 'app-asistencia',
-  templateUrl: './asistencia.page.html',
-  styleUrls: ['./asistencia.page.scss'],
+    selector: 'app-asistencia',
+    templateUrl: './asistencia.page.html',
+    styleUrls: ['./asistencia.page.scss'],
+    standalone: false
 })
 export class AsistenciaPage implements OnInit {
   scanActive = false;

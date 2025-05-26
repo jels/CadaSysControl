@@ -4,9 +4,10 @@ import { LoadingController, ToastController } from '@ionic/angular';
 import jsQR from 'jsqr';
 
 @Component({
-  selector: 'app-salida',
-  templateUrl: './salida.page.html',
-  styleUrls: ['./salida.page.scss'],
+    selector: 'app-salida',
+    templateUrl: './salida.page.html',
+    styleUrls: ['./salida.page.scss'],
+    standalone: false
 })
 export class SalidaPage implements OnInit {
   scanActive = false;

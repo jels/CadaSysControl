@@ -3,9 +3,10 @@ import { Router } from '@angular/router';
 import { ReportesService } from '../services/reportes.service';
 
 @Component({
-  selector: 'app-listar-asistenciaprofes',
-  templateUrl: './listar-asistenciaprofes.page.html',
-  styleUrls: ['./listar-asistenciaprofes.page.scss'],
+    selector: 'app-listar-asistenciaprofes',
+    templateUrl: './listar-asistenciaprofes.page.html',
+    styleUrls: ['./listar-asistenciaprofes.page.scss'],
+    standalone: false
 })
 export class ListarAsistenciaprofesPage implements OnInit {
   contProfesPresentes: number = 0;
